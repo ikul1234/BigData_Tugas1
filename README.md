@@ -54,6 +54,7 @@ Download Dataset on Kaggle (https://www.kaggle.com/devinanzelmo/dota-2-matches)
 ### Join Dataset From 2 Different .csv Files
 1. Csv files:
 * Add 2 file reader
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582057695307.jpg "File Reader")
 * Set input location for the file
 * Check read column header
 * Set the column delimiter
@@ -61,38 +62,48 @@ Download Dataset on Kaggle (https://www.kaggle.com/devinanzelmo/dota-2-matches)
 * Check if the preview is right then click apply
 * Click OK
 * Execute
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582057678268.jpg "match")
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582057716335.jpg "hero_names")
 
 ## Evaluation
 ---
 ### Joiner
 1. Add joiner
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582057733442.jpg "Joiner")
 2. Set 2 File Reader's Output to joiner
-3. Set 2 column that you will join (In my case, hero_id on Match and hero_id on hero_names)
+3. Set 2 column that you will join (In my case, hero_id on match and hero_id on hero_names)
 4. Apply then Click OK
 5. Execute
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058073203.jpg "Joiner Setting")
 ## Deployment
 ---
 ### Connect MySQL
 1. Add MySQL Connector
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058103508.jpg "MySQL Connector")
 2. Choose your Database Dialect (In my case, I use MySQL)
 3. Choose your Driver Name (In my case, MySQL 5)
 4. Set your Database hostname and Database name according to your MySQL
 5. Click Apply then OK
 6. Execute
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058128967.jpg "MySQL Connector Setting")
 ### Write to Database in MySQL
 1. Add DB Writer
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058273333.jpg "DB Writer")
 2. Set Joiner's Output to DB Writer
 3. Set MySQL Connector to DB Writer
 4. Set Schema that you want to write it
 5. Set Table name that you want to write it
 6. Click Apply then Click OK
 7. Execute
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058296062.jpg "MySQL Setting")
 ### Write to XLS File
 1. Add Excel Writer(XLS)
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058154060.jpg "Excel Writer")
 2. Set Joiner's Output to Excel Writer(XLS)
 3. Set File Location that you want
 4. Click Apply then Click OK
 5. Execute
+![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582058169324.jpg "XLS Setting")
 ## Final Workflow
 ---
 ![GAGAL](https://github.com/ikul1234/BigData_Tugas1/blob/master/img/1582057589488.jpg "Final Workflow")
